@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Time Table</title>
+  </head>
+  <body>
+    <div class="btn-cont shadow">
+      <img id="img" src="1.jpg" >
+        <button id="make-changes" class="btn float-right">Make Changes</button>
+        <button id="done" class="btn float-right">Done</button>
+        <input placeholder="Enter Password" class="make-changes-pass float-right input" />
+    </div>
+
+    <div class="container card center-box shadow">
+      <div class="text_container center-box">
+        <h2 class="c-s-h2">Comp Sci</h2>
+        <h2 class="h2">Lecture Time Table</h2>
+      </div>
+      <div class="table card">
+        <div class="columb head-columb">
+          <div class="divs head">Date</div>
+          <div class="divs head">08-09</div>
+          <div class="divs head">09-10</div>
+          <div class="divs head">10-11</div>
+          <div class="divs head">11-12</div>
+          <div class="divs head">12-01</div>
+          <div class="divs head">01-02</div>
+          <div class="divs head">02-03</div>
+          <div class="divs head">03-04</div>
+          <div class="divs head">04-05</div>
+          <div class="divs head">05-06</div>
+        </div>
+        <div class="columb">
+          <div class="divs head">Mon:</div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont to-last"></div>
+          <div class="divs drag-cont last"></div>
+        </div>
+        <div class="columb">
+          <div class="divs head">Tue:</div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont to-last"></div>
+          <div class="divs drag-cont last"></div>
+        </div>
+        <div class="columb">
+          <div class="divs head">Wed:</div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont to-last"></div>
+          <div class="divs drag-cont last"></div>
+        </div>
+        <div class="columb">
+          <div class="divs head">Thu:</div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont to-last"></div>
+          <div class="divs drag-cont last"></div>
+        </div>
+        <div class="columb">
+          <div class="divs head">Fry:</div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont to-last"></div>
+          <div class="divs drag-cont last"></div>
+        </div>
+        <div class="columb">
+          <div class="divs head">Sat:</div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont"></div>
+          <div class="divs drag-cont to-last"></div>
+          <div class="divs drag-cont last"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card input-trash-container center-box no-display">
+      <div class="trash-cont card shadow">
+        <div>
+          <h3>Trash</h3>
+          <div class="trash card drag-cont"></div>
+        </div>
+      </div>
+      <div class="card input-container shadow">
+        <input
+          type="text"
+          placeholder="Enter Lecture"
+          class="input-input input card2"
+        />
+        <input type="text" placeholder="Hrs" class="hr_input input card2" />
+        <input
+          type="text"
+          placeholder="Location"
+          class="location_input input card2"
+        />
+        <input type="submit" placeholder="Create" class="btn input-btn card2" />
+
+        <p class="input-p">
+          <b> Note:</b> Input shuld be no more than 8 letters and <br />
+          Hrs shuld be 1, 2 or 3hrs but Location is optional.
+        </p>
+        <div class="box card">
+          <div class="drag-cont cards" draggable="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
